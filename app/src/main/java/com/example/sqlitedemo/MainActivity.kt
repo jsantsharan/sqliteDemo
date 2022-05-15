@@ -34,6 +34,16 @@ class MainActivity : AppCompatActivity() {
         val contentValues = ContentValues()
         contentValues.put("empEXPERIENCE", "2.8")
         sqLiteDatabase.update("EMPLOYEE", contentValues, "_empId = ?", arrayOf("2"))
+        sqLiteDatabase.update("EMPLOYEE", contentValues, "empNAME = ? AND empEXPERIENCE = ?", arrayOf("hemant","5.9"))
+
+/**
+ * for deleting row from sqlite database
+ * */
+       // sqLiteDatabase.delete("EMPLOYEE","_empId = ?", arrayOf("3"))
+
+
+
+
         val myCursor = sqLiteDatabase.rawQuery("SELECT empNAME,empTEAM,empEXPERIENCE FROM EMPLOYEE", arrayOf())
 
         if (myCursor!=null){
