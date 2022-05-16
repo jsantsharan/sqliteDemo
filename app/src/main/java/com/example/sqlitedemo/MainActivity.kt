@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 /**
  * for deleting row from sqlite database
  * */
-       // sqLiteDatabase.delete("EMPLOYEE","_empId = ?", arrayOf("3"))
+        sqLiteDatabase.delete("EMPLOYEE","_empId = ?", arrayOf("3"))
 
 
 
