@@ -29,9 +29,9 @@ public class MyHelperJava extends SQLiteOpenHelper {
        insert("Priyanka Bagul","iOS","15000","3.2",sqLiteDatabase);
 
         //Cursor myCursor=sqLiteDatabase.rawQuery("SELECT empNAME FROM EMPLOYEE",new String[]{});
-        /*ContentValues contentValues =new ContentValues();
+        ContentValues contentValues =new ContentValues();
         contentValues.put("empEXPERIENCE", "2.3");
-        sqLiteDatabase.update("EMPLOYEE",contentValues,"_empId = ?",new String[]{"1"});*/
+        sqLiteDatabase.update("EMPLOYEE",contentValues,"_empId = ?",new String[]{"1"});
     }
 
     @Override
